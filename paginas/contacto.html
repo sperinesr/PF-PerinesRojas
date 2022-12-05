@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenido">
+            <h3 class="encabezado__contenido-logo">
+                <a href="../index.html">Busca Torneos TCG</a>
+            </h3>
+            <nav class="encabezado__contenido-menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../paginas/torneos.html">Torneos</a></li>
+                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                    <li><a href="../paginas/contacto.html">Contacto</a></li>
+                    <li><a href="../paginas/galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <div>
+                <h2>Contactanos</h2>
+                <br />
+                <h3>Si tienes quejas, sugerencia o quieres agregar un torneo al sistema envianos el siguiente
+                    formulario:</h3>
+                <br />
+                <form action="nosotros.html" method="get">
+                    <label>Motivo</label>
+                    <select name="motivo_opt" id="motivo">
+                        <option value="ingresar_torneo">Ingresar Torneo</option>
+                        <option value="quejas">Quejas</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                    <br />
+                    <label>Nombre</label>
+                    <input type="text" name="nombre_opt" id="nombre">
+                    <br />
+                    <label>Correo</label>
+                    <input type="email" name="correo_opt" id="correo">
+                    <br />
+                    <label>Asunto</label>
+                    <input type="text" name="asunto_opt" id="asunto">
+                    <br />
+                    <label>Mensaje</label>
+                    <br />
+                    <textarea name="mensaje_opt" id="mensaje" cols="30" rows="10"></textarea>
+                    <br />
+                    <input type="submit" value="Buscar">
+                    <input type="reset" value="Limpiar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <nav>
+                <ul class="footer__contenido-rrss">
+                    <li><a href="http://www.facebook.com"><img
+                                src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Imagen facebook"
+                                srcset=""></a></li>
+                    <li><a href="http://www.instagram.com"><img
+                                src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png"
+                                alt="Imagen instagram" srcset=""></a></li>
+                    <li><a href="http://www.whatsapp.com"><img
+                                src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c543.png"
+                                alt="Imagen facebook" srcset=""></a></li>
+                </ul>
+                <h2 class="footer__contenido-icono"><a href="../index.html"><img src="../imagenes/icono.jpg"
+                            alt="Imagen icono"></a>Busca Torneos TCG</h2>
+                <ul class="footer__contenido-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../paginas/torneos.html">Torneos</a></li>
+                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                    <li><a href="../paginas/contacto.html">Contacto</a></li>
+                    <li><a href="../paginas/galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

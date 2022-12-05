@@ -1,0 +1,177 @@
+/* GLOBAL */
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('./font/Lato-Regular.ttf');
+
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('./font/Lato-Bold.ttf');
+
+    font-weight: bold;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Lato';
+}
+/* INDEX HEADER */
+.encabezado{
+    background-image: url('./imagenes/dragon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 30px;
+}
+
+.encabezado__contenido-logo{
+    text-align: start;
+    font-size: xx-large;
+}
+
+.encabezado__contenido-logo a{
+    color: aliceblue;
+}
+
+.encabezado__contenido-menu {
+    font-size: large;
+}
+
+.encabezado__contenido-menu li{
+    display: inline;
+}
+
+.encabezado__contenido-menu a{
+    color: #FFD460;
+}
+
+/* INDEX CONTENIDO */
+
+.contenido{
+    background-color: #EA5455;
+    padding: 25px;
+
+    text-align: center;
+}
+
+.contenido__titulo{
+    font-size: 40px;
+}
+
+.contenido__texto{
+    font-size: 30px;
+}
+
+.contenido__lista{
+    font-size: 30px;
+    padding: 25px;
+
+    text-align: center;
+
+    list-style-type: none;
+}
+
+.contenido__imagen{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-color:white;
+    border: black solid;
+    border-radius: 20px;
+}
+
+/* INDEX FOOTER */
+
+.footer{
+    background-color: #F07B3F;
+}
+
+.footer__contenido{
+    padding: 25px;
+}
+
+.footer__contenido h2 a img{
+    width: 100px;
+
+    border: black solid;
+}
+
+.footer__contenido-rrss{
+}
+
+.footer__contenido-rrss li{
+    display: inline;
+}
+
+.footer__contenido-rrss img{
+    width: 100px;
+
+    border-radius: 20px;
+    border: black solid;
+}
+
+.footer__contenido-menu{
+    font-size: 20px;
+
+    background-color: #FFD460;
+}
+
+.footer__contenido-menu li{
+    display: inline;
+}
+
+.footer__contenido-menu li a{
+    color: #2D4059;
+}
+
+/* TORNEOS */
+
+.contenido h2{
+    font-size: xx-large;
+}
+
+.contenido div{
+}
+
+.contenido div form{
+    border: black solid 1px;
+    width: 650px;
+
+    text-align: left;
+
+    display: block;
+
+
+}
+
+.contenido div textarea{
+    border: black solid 1px;
+    max-width: 650px;
+    display: block;
+}
+
+.contenido div form label{
+    font-size: x-large;
+}
+
+.contenido div form input{
+    font-size: x-large;
+}
+
+/* GALERIA */
+
+.contenido img{
+    width: 300px;
+
+    border-radius: 20px;
+    border: black solid;
+}
