@@ -22,43 +22,75 @@
 body{
     font-family: 'Lato';
 }
+
 /* INDEX HEADER */
+
 .encabezado{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 1500px;
     background-image: url('./imagenes/dragon.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: 1500px ;
+
     padding: 30px;
 }
 
-.encabezado__contenido-logo{
-    text-align: start;
+ .encabezado-logo{
+
+    display: flex;
+    flex-direction: column;
     font-size: xx-large;
+
+    padding-bottom: 30px;
 }
 
-.encabezado__contenido-logo a{
-    color: aliceblue;
+.encabezado-logo a{
+
+    color: ghostwhite;
+    width: max-content;
+    
+    border: black solid 1px;
+    /* border-radius: 20px; */
+
+    text-decoration-line: none;
+    text-align: center;
+
+    background-color :rgb(170, 120, 46);
 }
 
-.encabezado__contenido-menu {
-    font-size: large;
+.encabezado-menu {
+
 }
 
-.encabezado__contenido-menu li{
+.encabezado-menu li{
+    
     display: inline;
 }
 
-.encabezado__contenido-menu a{
+.encabezado-menu a{
     color: #FFD460;
+
+    text-decoration: none;
+    font-size: large;
+
+    padding-inline: 2px;
+    
+    border-radius: 5px;
+    background-color: black;
 }
 
 /* INDEX CONTENIDO */
 
 .contenido{
-    background-color: #EA5455;
-    padding: 25px;
 
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    background-color: #EA5455;
+    padding: 30px;
 }
 
 .contenido__titulo{
