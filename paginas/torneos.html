@@ -29,10 +29,10 @@
     </header>
 
     <main>
-        <section class="contenido">
+        <section class="torneos">
             <h2>Buscar Torneos</h2>
             <br/>
-            <div>
+            <div class="torneos-form">
                 <form action="torneos.html" method="get">
                     <label>Elige tu ubicacion</label>
                     <select name="region_opt" id="region">
@@ -58,18 +58,21 @@
                     <input type="submit" value="Buscar">
                     <input type="reset" value="Limpiar">
                 </form>
-                <textarea name="ltorneos" readonly id="" cols="90" rows="15">
-                    Ubicacion: 	Santiago, Puente Alto, Espacio Urbano, Patio de comidas
-                    Fecha:		14-dic-2022
-                    Horario:		de 9:AM a 18:00 PM
-                    TCG:		Mitos y leyendas: Primer Bloque
-                    Reglas:	
+            </div>
+            <div class="listatorneos">
+                <textarea name="ltorneos" readonly id="" cols="80" rows="15">
+
+Ubicacion: 	Santiago, Puente Alto, Espacio Urbano, Patio de comidas
+Fecha:		14-dic-2022
+Horario:		de 9:AM a 18:00 PM
+TCG:		Mitos y leyendas: Primer Bloque
+Reglas:	
                 
-                    Ubicacion: 	Santiago, Las condes, Costanera, Patio de comidas
-                    Fecha:		14-dic-2022
-                    Horario:		de 9:AM a 18:00 PM
-                    TCG:		Mitos y leyendas: Primer Bloque
-                    Reglas:			
+Ubicacion: 	Santiago, Las condes, Costanera, Patio de comidas
+Fecha:		14-dic-2022
+Horario:		de 9:AM a 18:00 PM
+TCG:		Mitos y leyendas: Primer Bloque
+Reglas:			
                 </textarea>
             </div>
         </section>

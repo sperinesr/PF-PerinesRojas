@@ -17,6 +17,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -35,6 +36,8 @@ body{
     background-size: 2000px ;
 
     padding: 30px;
+
+    max-width: 1500px;
 }
 
  .encabezado-logo{
@@ -92,6 +95,7 @@ body{
     padding: 30px;
 
     height: 450px;
+    max-width: 1500px;
 
     align-items: center;
 }
@@ -104,6 +108,8 @@ body{
 .contenido-obj h2{
     font-size: 40px;
     padding-bottom: 10px;
+
+    text-align: center;
 }
 
 .contenido-obj p{
@@ -152,6 +158,8 @@ body{
 
     padding: 5px;
     align-items: center;
+
+    max-width: 1500px;
 }
 
 .footer-rrss {
@@ -198,34 +206,67 @@ body{
 
 /* TORNEOS */
 
-.contenido h2{
+.torneos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-image: linear-gradient(orange,red);
+
+    max-width: 1500px;
+
+    height: 450px;
+
+    align-items: center;
+}
+
+.torneos h2{
     font-size: xx-large;
+    grid-column: 2;
+    grid-row: 1;
+
+    text-align: center;
 }
 
+.torneos-form{
+    grid-column: 2;
+    grid-row: 2;
 
-.contenido div form{
-    border: black solid 1px;
-    width: 650px;
-
-    text-align: left;
-
-    display: block;
-
-
+    margin: 60px;
 }
 
-.contenido div textarea{
-    border: black solid 1px;
-    max-width: 650px;
-    display: block;
+.torneos-form form{
+    text-align: center;
+
+    background-color: #FFD460;
+
+    border: black solid 5px;
+    border-radius: 30px;
+
+    height: 300px;
+    width: 550px;
+
+    padding: 12%;
 }
 
-.contenido div form label{
-    font-size: x-large;
+.torneos-form form input{
+    width: 60px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    margin: 10px;
 }
 
-.contenido div form input{
-    font-size: x-large;
+.listatorneos{
+    grid-row: 2;
+    grid-column-start: 3;
+}
+
+.listatorneos textarea{
+    border: black solid 5px;
+    border-radius: 20px;
+
+    height: 300px;
+    width: 550px;
 }
 
 /* GALERIA */
