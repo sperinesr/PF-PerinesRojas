@@ -31,24 +31,23 @@
     <main>
         <section class="torneos">
             <h2>Buscar Torneos</h2>
-            <br/>
-            <div class="torneos-form">
+            <section class="torneos-form">
                 <form action="torneos.html" method="get">
-                    <label>Elige tu ubicacion</label>
+                    <label>Elige tu ubicacion: </label>
                     <select name="region_opt" id="region">
                         <option value="metropolitana">Metropolitana</option>
                         <option value="arica">Arica</option>
                         <option value="punta_arenas">Punta arenas</option>
                     </select>
                     <br/>
-                    <label>Elige tu comuna</label>
+                    <label>Elige tu comuna: </label>
                     <select name="comuna_opt" id="comuna">
                         <option value="las_condes">Las Condes</option>
                         <option value="puente_alto">Puente Alto</option>
                         <option value="la_florida">La Florida</option>
                     </select>
                     <br/>
-                    <label>Juego de cartas (TCG)</label>
+                    <label>Juego de cartas (TCG): </label>
                     <select name="juego_opt" id="juego">
                         <option value="myl">Mitos y Leyendas</option>
                         <option value="pkm">Pokemon</option>
@@ -58,9 +57,9 @@
                     <input type="submit" value="Buscar">
                     <input type="reset" value="Limpiar">
                 </form>
-            </div>
+            </section>
             <div class="listatorneos">
-                <textarea name="ltorneos" readonly id="" cols="80" rows="15">
+                <textarea name="ltorneos" readonly  id="" cols="80" rows="15">
 
 Ubicacion: 	Santiago, Puente Alto, Espacio Urbano, Patio de comidas
 Fecha:		14-dic-2022
