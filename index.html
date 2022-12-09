@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
                 <h2>Objetivo</h2>
                 <p>Encontrar a nivel nacional, torneos disponibles de tus juegos de cartas coleccionables favoritos, tales como Mitos y Leyendas, Pokemon, Yu-Gi-Oh, entre otros.</p>
             </div>
-            <img class="contenido-img" src="./imagenes/torneo.jpg" alt="Imagen de torneo" srcset="">
+            <img data-aos="zoom-in" class="contenido-img" src="./imagenes/torneo.jpg" alt="Imagen de torneo" srcset="">
             <ul class="contenido-lista">
                 <li>1.Busca y encuentra el torneo que deseas.</li>
                 <li>2.Revisa los torneos disponibles.</li>
@@ -65,6 +66,9 @@
             </nav>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
