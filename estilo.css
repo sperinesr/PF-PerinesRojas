@@ -454,7 +454,7 @@ text-align: center;
 
 @media (max-width: 576px){
     .encabezado{
-        padding: 10px 0;
+        padding: 5px 0;
         width: 100%;
 
         background-size: cover;
@@ -470,15 +470,15 @@ text-align: center;
     .encabezado-menu li{
         display: flex;
 
-        padding: 5px;
+        padding: 3px;
 
         justify-content: center;
         align-items: center;
     }
     .encabezado-menu a{
         text-align: center;
-        width: 80px;
-        height: 30px;
+        width: 100px;
+        height: 25px;
         
         background-color: #2e090a;
     }
@@ -487,10 +487,10 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(1,1fr);
 
-        padding: 20px;
+        padding: 5px;
     
         width: 100%;
-        height: 50%; 
+        height: 100%; 
     }
     .contenido img{
         display: block;
@@ -500,9 +500,9 @@ text-align: center;
         grid-column: 1;
         grid-row: 3;
 
-        width: 350px;
+        width: 330px;
 
-        margin-top: 30px;
+        margin-top: 20px;
 
     }
     .contenido-obj{
@@ -523,61 +523,76 @@ text-align: center;
         grid-template-columns: repeat(2,1fr);
     }
     .footer-icono h2{
-        font-size: 20px;
+        font-size: 15px;
 
         vertical-align: middle;
     }
     .footer-menu li{
         display: none;
     }
+
+    .footer-rrss li a img{
+        width: 25px;
+
+        margin-left: 10px;
+    }
+    
     .footer-icono img{
         vertical-align: middle;
 
-        padding-right: 5px;
+        padding-right: 3px;
     }
 
     .torneos{
         grid-template-columns: repeat(1,1fr);
         width: 100%;
 
+        padding: 5px;
+
         justify-items: center;
+        justify-items:end ;
     }
 
     .torneos h2{
-        font-size: 25px;
+        font-size: 20px;
+        width: 100%;
+
+        text-align: center;
     }
 
     .torneos-form{
         margin: 0%;
+        width: 100%;
     }
     
     .torneos-form form{
-        height: 150px;
+        height: 125px;
+        width: 100%;
     }
     
     .torneos-form form label{
-        width: 200px;
+        width: 150px;
 
         margin-top: 2px;
         margin-left: 0px;
         
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .torneos-form form select{
-        width: 200px;
+        width: 150px;
 
         margin-top: 2px;
-        margin-right: 15px;
+        margin-right: 5px;
     
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .torneos-form form input{
         width: 80px;
         height: 30px;
     
-        font-size: 20px;
+        font-size: 15px;
     
         margin: 5px;
     
@@ -585,18 +600,16 @@ text-align: center;
     }
     
     .listatorneos{
-
-        grid-row: 3;
         grid-column: 1;
-    
+        grid-row: 3;
+        width: 100%;
         height: 100%;
     }
     
     .listatorneos textarea{
         border-radius: 10px;
-    
         height: 230px;
-        width: 430px;
+        width: 100%;
     }
 
     .nosotros{
@@ -604,7 +617,14 @@ text-align: center;
     
         width: 100%;
         height: 100%;
+        margin-top: 0px;
     }
+
+    .nosotros h2{
+        padding-bottom: 15px;
+        margin-top: 10px;
+    }
+
     .nosotros img{
         grid-column: 1;
         grid-row: 3;
@@ -635,14 +655,14 @@ text-align: center;
     
     .contacto div form select{
         display: inline-block;
-        width: 130px;
+        width: 150px;
     
         font-size: 15px;
     }
     
     .contacto div form input{
         display: inline-block;
-        width: 130px;
+        width: 150px;
     
         font-size: 15px;
         margin: 5px;
@@ -658,14 +678,9 @@ text-align: center;
         grid-column: 1;
         grid-row: 1;
     
-        color: white;
-    
-        text-align: center;
-    
         margin-top: 10px;
         margin-bottom: 10px;
 
-        font-size: 20px;
     }
     
     .galeria h3{
@@ -678,15 +693,14 @@ text-align: center;
     
     .galeria section{
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 250px;
-    
-        align-items: center;
-        justify-items: center;
+        grid-template-rows: 200px;
+
+        width: 100%;
+
     }
     
     .galeria section img{
-        width: 450px;
-
-        margin: 10px;
+        margin:5px;
+        width: 90%;
     }
 }
