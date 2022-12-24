@@ -29,7 +29,7 @@
         }
 
         & h3{
-            font-size: 25px;
+            font-size: 30px;
         }
 
         & h4{
@@ -86,49 +86,57 @@
     width: 100%;
     height: 100%;
 
-    justify-content: center;
-}
+    padding: $paddingMobile;
 
-.contacto div{
-    width: 100%;
-}
+    & div{
+        width: 100%;
 
-.contacto div h2{
-    margin-top: 0px;
-    font-size: 40px;
-}
+        & h2{
+            margin-top: 0px;
+            font-size: $titulosMobile;
+        }
 
-.contacto div h3{
-    font-size: 20px;
-}
+        & h3{
+            margin-top: 10px;
+            margin-bottom: 1px;
+            font-size: 20px;
+        }
 
-.contacto div form{
-    width: 400px;
+        & p{
+            font-size: $parrafosMobile;
+        }
 
-    background-color:rgb(216, 175, 148);
-}
+        & form{
+            width: 400px;
 
-.contacto div form label{
-    display: inline-block;
-    width: 60px;
+            background-color:rgb(216, 175, 148);
 
-    font-size: 15px;
-}
+            & label{
+                display: inline-block;
+                width: 60px;
+            
+                font-size: 15px;
+                font-weight: bold;
+            }
 
-.contacto div form select{
-    display: inline-block;
-    width: 130px;
+            & select{
+                display: inline-block;
+                width: 130px;
+            
+                font-size: 15px;
+            
+                margin: 5px;
+            }
 
-    font-size: 15px;
-
-    margin: 5px;
-}
-
-.contacto div form input{
-    display: inline-block;
-    width: 130px;
-
-    font-size: 15px;
-    margin: 5px;
+            & input{
+                display: inline-block;
+                width: 130px;
+            
+                font-size: 15px;
+                font-weight: bold;
+                margin: 5px;
+            }
+        }
+    }
 }
 }

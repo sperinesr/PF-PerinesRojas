@@ -100,11 +100,12 @@
     width: 100%;
     height: 100%;
 
-    padding: 5px;
+    padding: $paddingMobile;
 
     & h2{
-        font-size: 30px;
+        font-size: $titulosMobile;
         width: 100%;
+        padding-bottom: $paddingBottomM;
     }
 
     &-form{
@@ -112,9 +113,8 @@
 
         width: 100%;
         height: 100%;
-
-        padding-top: 20px;
-        padding-bottom: 20px;
+        
+        padding-bottom: $paddingBottomM;
 
         & form{
             height: max-content;

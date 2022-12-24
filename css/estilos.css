@@ -176,14 +176,17 @@ body {
         padding-bottom: 5px; }
       .contenido-obj p {
         grid-column: 1;
-        grid-row: 2; }
+        grid-row: 2;
+        font-size: 25px; }
     .contenido img {
       display: block;
-      margin: auto;
       grid-column: 1;
       grid-row: 3;
       width: 90%;
-      margin-top: 20px; } }
+      margin-top: 20px; }
+    .contenido-lista {
+      font-size: 20px;
+      padding-bottom: 5px; } }
 
 /* CONTACTANOS */
 .contacto {
@@ -206,7 +209,7 @@ body {
       text-align: center;
       margin-top: 20px; }
     .contacto div h3 {
-      font-size: 25px; }
+      font-size: 30px; }
     .contacto div h4 {
       font-size: 20px;
       margin-top: 20px; }
@@ -239,31 +242,37 @@ body {
   .contacto {
     width: 100%;
     height: 100%;
-    justify-content: center; }
-  .contacto div {
-    width: 100%; }
-  .contacto div h2 {
-    margin-top: 0px;
-    font-size: 40px; }
-  .contacto div h3 {
-    font-size: 20px; }
-  .contacto div form {
-    width: 400px;
-    background-color: #d8af94; }
-  .contacto div form label {
-    display: inline-block;
-    width: 60px;
-    font-size: 15px; }
-  .contacto div form select {
-    display: inline-block;
-    width: 130px;
-    font-size: 15px;
-    margin: 5px; }
-  .contacto div form input {
-    display: inline-block;
-    width: 130px;
-    font-size: 15px;
-    margin: 5px; } }
+    padding: 5px; }
+    .contacto div {
+      width: 100%; }
+      .contacto div h2 {
+        margin-top: 0px;
+        font-size: 30px; }
+      .contacto div h3 {
+        margin-top: 10px;
+        margin-bottom: 1px;
+        font-size: 20px; }
+      .contacto div p {
+        font-size: 25px; }
+      .contacto div form {
+        width: 400px;
+        background-color: #d8af94; }
+        .contacto div form label {
+          display: inline-block;
+          width: 60px;
+          font-size: 15px;
+          font-weight: bold; }
+        .contacto div form select {
+          display: inline-block;
+          width: 130px;
+          font-size: 15px;
+          margin: 5px; }
+        .contacto div form input {
+          display: inline-block;
+          width: 130px;
+          font-size: 15px;
+          font-weight: bold;
+          margin: 5px; } }
 
 /* GALERIA */
 .galeria {
@@ -287,7 +296,7 @@ body {
     grid-column: 1/4;
     grid-row: 2;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 30px; }
   .galeria section {
@@ -305,30 +314,32 @@ body {
 @media (max-width: 576px) {
   .galeria {
     grid-template-columns: repeat(1, 1fr);
+    padding: 5px;
     width: 100%;
     height: 100%;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center; }
-  .galeria h2 {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 0px;
-    margin-bottom: 10px; }
-  .galeria h3 {
-    grid-column: 1;
-    margin-bottom: 10px;
-    font-size: 20px; }
-  .galeria section {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    height: 100%;
-    justify-items: center; }
-  .galeria section img {
-    margin: 0px;
-    margin-top: 20px;
-    width: 100%; } }
+    .galeria h2 {
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: 0px;
+      padding-bottom: 5px;
+      font-size: 30px; }
+    .galeria h3 {
+      grid-column: 1;
+      padding-bottom: 5px;
+      font-size: 25px; }
+    .galeria section {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      height: 100%;
+      justify-items: center; }
+      .galeria section img {
+        margin: 0px;
+        margin-top: 20px;
+        width: 100%; } }
 
 /* NOSOTROS */
 .nosotros {
@@ -338,37 +349,47 @@ body {
   height: 548px;
   padding: 20px;
   background-image: linear-gradient(white, yellow);
+  align-items: center;
   justify-items: center; }
   .nosotros h2 {
     grid-column: 1;
     grid-row: 1;
     text-align: center;
-    font-size: 50px;
-    margin-top: 10px; }
-  .nosotros h3 {
+    font-size: 40px; }
+  .nosotros p {
     grid-column: 1;
     grid-row: 2;
-    text-align: center; }
+    text-align: center;
+    font-size: 20px; }
   .nosotros img {
+    padding: 0px;
+    margin: 0px;
     grid-column: 2;
     grid-row: 1/3;
-    scale: 80%;
+    height: 450px;
     border: black solid 5px;
-    border-radius: 30px; }
+    border-radius: 20px; }
 
 @media (max-width: 576px) {
   .nosotros {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     height: 100%;
-    margin-top: 0px; }
-  .nosotros h2 {
-    padding-bottom: 15px;
-    margin-top: 10px; }
-  .nosotros img {
-    grid-column: 1;
-    grid-row: 3;
-    margin: 0; } }
+    padding: 5px; }
+    .nosotros h2 {
+      font-size: 30px;
+      padding-bottom: 5px; }
+    .nosotros p {
+      font-size: 25px;
+      padding-bottom: 5px; }
+    .nosotros img {
+      padding: 0px;
+      margin: 0px;
+      grid-column: 1;
+      grid-row: 3;
+      height: 100%;
+      border: black solid 5px;
+      border-radius: 20px; } }
 
 /* TORNEOS */
 .torneos {
@@ -434,13 +455,13 @@ body {
     padding: 5px; }
     .torneos h2 {
       font-size: 30px;
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 5px; }
     .torneos-form {
       margin: 0%;
       width: 100%;
       height: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px; }
+      padding-bottom: 5px; }
       .torneos-form form {
         height: max-content;
         width: 100%; }
