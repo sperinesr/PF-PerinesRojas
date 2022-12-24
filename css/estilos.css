@@ -255,7 +255,7 @@ body {
       .contacto div p {
         font-size: 25px; }
       .contacto div form {
-        width: 400px;
+        width: 100%;
         background-color: #d8af94; }
         .contacto div form label {
           display: inline-block;
