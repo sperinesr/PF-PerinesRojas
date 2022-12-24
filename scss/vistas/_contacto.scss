@@ -80,3 +80,55 @@
         }
     }
 }
+
+@media (max-width: 576px){
+.contacto{
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+}
+
+.contacto div{
+    width: 100%;
+}
+
+.contacto div h2{
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+.contacto div h3{
+    font-size: 20px;
+}
+
+.contacto div form{
+    width: 400px;
+
+    background-color:rgb(216, 175, 148);
+}
+
+.contacto div form label{
+    display: inline-block;
+    width: 60px;
+
+    font-size: 15px;
+}
+
+.contacto div form select{
+    display: inline-block;
+    width: 130px;
+
+    font-size: 15px;
+
+    margin: 5px;
+}
+
+.contacto div form input{
+    display: inline-block;
+    width: 130px;
+
+    font-size: 15px;
+    margin: 5px;
+}
+}

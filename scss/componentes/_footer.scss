@@ -50,3 +50,29 @@
         }
     }
 }
+
+@media (max-width: 576px){
+.footer{
+    grid-template-columns: repeat(2,1fr);
+
+    &-rrss li a img{
+        scale: 70%;
+    }
+
+    &-icono h2{
+        font-size: 15px;
+
+        vertical-align: middle;
+
+        & img{
+            vertical-align: middle;
+
+            padding-right: 3px;
+        }
+    }
+
+    &-menu li{
+        display: none;
+    }
+}
+}

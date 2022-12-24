@@ -52,6 +52,29 @@ body {
     color: black;
     transition: all 0.2s ease; }
 
+@media (max-width: 576px) {
+  .encabezado {
+    padding: 5px;
+    width: 100%;
+    background-size: cover; }
+    .encabezado-logo {
+      font-size: x-large;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      padding: 0px;
+      padding-bottom: 10px; }
+    .encabezado-menu li {
+      display: flex;
+      padding: 2px;
+      justify-content: center;
+      align-items: center; }
+    .encabezado-menu a {
+      text-align: center;
+      width: 30%;
+      height: 100%;
+      background-color: #2e090a; } }
+
 /* INDEX FOOTER */
 .footer {
   display: grid;
@@ -85,6 +108,20 @@ body {
       list-style-type: none; }
       .footer-menu li a {
         text-decoration-line: none; }
+
+@media (max-width: 576px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr); }
+    .footer-rrss li a img {
+      scale: 70%; }
+    .footer-icono h2 {
+      font-size: 15px;
+      vertical-align: middle; }
+      .footer-icono h2 img {
+        vertical-align: middle;
+        padding-right: 3px; }
+    .footer-menu li {
+      display: none; } }
 
 /* INDEX CONTENIDO */
 .contenido {
@@ -123,6 +160,30 @@ body {
     padding-top: 25px;
     text-align: left;
     list-style-type: none; }
+
+@media (max-width: 576px) {
+  .contenido {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px;
+    width: 100%;
+    height: 100%; }
+    .contenido-obj {
+      grid-column: 1;
+      grid-row: 1; }
+      .contenido-obj h2 {
+        font-size: 30px;
+        padding-bottom: 5px; }
+      .contenido-obj p {
+        grid-column: 1;
+        grid-row: 2; }
+    .contenido img {
+      display: block;
+      margin: auto;
+      grid-column: 1;
+      grid-row: 3;
+      width: 90%;
+      margin-top: 20px; } }
 
 /* CONTACTANOS */
 .contacto {
@@ -174,6 +235,36 @@ body {
       .contacto div form textarea {
         border: black solid 1px; }
 
+@media (max-width: 576px) {
+  .contacto {
+    width: 100%;
+    height: 100%;
+    justify-content: center; }
+  .contacto div {
+    width: 100%; }
+  .contacto div h2 {
+    margin-top: 0px;
+    font-size: 40px; }
+  .contacto div h3 {
+    font-size: 20px; }
+  .contacto div form {
+    width: 400px;
+    background-color: #d8af94; }
+  .contacto div form label {
+    display: inline-block;
+    width: 60px;
+    font-size: 15px; }
+  .contacto div form select {
+    display: inline-block;
+    width: 130px;
+    font-size: 15px;
+    margin: 5px; }
+  .contacto div form input {
+    display: inline-block;
+    width: 130px;
+    font-size: 15px;
+    margin: 5px; } }
+
 /* GALERIA */
 .galeria {
   display: grid;
@@ -211,6 +302,34 @@ body {
       border-radius: 20px;
       margin: 10px; }
 
+@media (max-width: 576px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center; }
+  .galeria h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0px;
+    margin-bottom: 10px; }
+  .galeria h3 {
+    grid-column: 1;
+    margin-bottom: 10px;
+    font-size: 20px; }
+  .galeria section {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 100%;
+    justify-items: center; }
+  .galeria section img {
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%; } }
+
 /* NOSOTROS */
 .nosotros {
   display: grid;
@@ -236,6 +355,20 @@ body {
     scale: 80%;
     border: black solid 5px;
     border-radius: 30px; }
+
+@media (max-width: 576px) {
+  .nosotros {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 100%;
+    margin-top: 0px; }
+  .nosotros h2 {
+    padding-bottom: 15px;
+    margin-top: 10px; }
+  .nosotros img {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0; } }
 
 /* TORNEOS */
 .torneos {
@@ -289,7 +422,49 @@ body {
     grid-column: 2;
     grid-row: 2;
     border: black solid 5px;
-    border-radius: 20px;
     width: 550px;
     height: 231px;
     font-size: 20px; }
+
+@media (max-width: 576px) {
+  .torneos {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 100%;
+    padding: 5px; }
+    .torneos h2 {
+      font-size: 30px;
+      width: 100%; }
+    .torneos-form {
+      margin: 0%;
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .torneos-form form {
+        height: max-content;
+        width: 100%; }
+        .torneos-form form label {
+          width: 150px;
+          margin-top: 2px;
+          margin-left: 0px;
+          font-size: 15px; }
+        .torneos-form form select {
+          width: 150px;
+          margin-top: 2px;
+          margin-right: 5px;
+          font-size: 15px; }
+        .torneos-form form input {
+          width: 80px;
+          height: 30px;
+          font-size: 15px;
+          margin: 5px;
+          margin-top: 10px; }
+    .torneos textarea {
+      grid-column: 1;
+      grid-row: 3;
+      width: 100%;
+      height: 100%;
+      height: 230px;
+      width: 100%;
+      font-size: 17px; } }
