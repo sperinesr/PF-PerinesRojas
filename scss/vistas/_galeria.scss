@@ -48,11 +48,12 @@
 
         align-items: center;
 
-
         & img{
             width: 400px;
             border: white solid 5px;
             border-radius: 20px;
+
+            margin: 10px;
         }
     }
 }
