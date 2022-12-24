@@ -1,0 +1,52 @@
+/* INDEX FOOTER */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    background-color: #F07B3F;
+
+    height: 80px;
+
+    padding: $paddingGeneral;
+    align-items: center;
+
+    max-width: $pantallaGrande;
+
+    &-rrss{
+        grid-column: 1;
+        grid-row: 1;
+
+        & li{
+            display: inline;
+
+            & a img{
+                border: black solid 2px;
+                border-radius: 15px;
+                width: 30px;
+            }
+        }
+    }
+    &-icono{
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+
+        & img{
+            width: 40px;
+        }
+    }
+    &-menu{
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+
+        & li{
+            display: inline;
+            list-style-type: none;
+
+            & a{
+                text-decoration-line: none;
+            }
+        }
+    }
+}

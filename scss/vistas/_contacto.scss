@@ -1,0 +1,82 @@
+/* CONTACTANOS */
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    max-width: $pantallaGrande;
+    padding: $paddingGeneral;
+    height: $alturaGeneral;
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+    background-image: linear-gradient(white, yellow);
+
+    & div{
+        display: grid;
+        justify-items: center;
+
+        & h2{
+            grid-column: 1;
+            grid-row: 1;
+
+            font-size: 40px;
+        
+            text-align: center;
+        
+            margin-top: 20px;
+        }
+
+        & h3{
+            font-size: 25px;
+        }
+
+        & h4{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        & form {
+            width: 500px;
+
+            border: black solid 5px;
+            border-radius: 20px;
+
+            padding: 5px;
+
+            & label{
+                display: inline-block;
+                width: 150px;
+
+                font-size: 20px;
+                text-align: right;
+            }
+
+            & select{
+                display: inline-block;
+                width: 165px;
+            
+                font-size: 20px;
+
+                border: black solid 1px;
+
+                margin-bottom: 3px;
+            }
+            & input{
+                display: inline-block;
+                width: 165px;
+
+                border: black solid 1px;
+            
+                font-size: 20px;
+
+                margin-bottom: 3px;
+            }
+
+            & textarea{
+                border: black solid 1px;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* GLOBAL */
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('../../font/Lato-Regular.ttf');
+
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('../../font/Lato-Bold.ttf');
+
+    font-weight: bold;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato';
+}
