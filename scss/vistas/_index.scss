@@ -50,15 +50,14 @@
         padding-top: 25px;
     
         text-align: left;
-    
-        list-style-type: none;
+
+        list-style: none;
     }
 }
 
 
 @media (max-width: 576px){
 .contenido{
-    display: grid;
     grid-template-columns: repeat(1,1fr);
 
     padding: $paddingMobile;

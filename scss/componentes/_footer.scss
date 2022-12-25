@@ -8,13 +8,17 @@
     height: 80px;
 
     padding: $paddingGeneral;
-    align-items: center;
 
     max-width: $pantallaGrande;
+
+    align-items: center;
 
     &-rrss{
         grid-column: 1;
         grid-row: 1;
+
+        margin-bottom: 0px;
+        padding-left: 0px;
 
         & li{
             display: inline;
@@ -23,6 +27,7 @@
                 font-size: 30px;
                 margin-inline: 5px;
                 color: darkblue;
+                text-align: left;
             }
         }
     }
@@ -31,13 +36,18 @@
         grid-column: 2;
         grid-row: 1;
 
-        & i{
-            font-size: 30px;
-            color: white;
-            background-color: black;
-            padding-inline: 5px;
-            border-radius: 5px;
-            margin-right: 5px;
+        & h2{
+            font-size: 25px;
+            margin-bottom: 0px;
+
+            & a i{
+                font-size: 25px;
+                color: white;
+                background-color: black;
+                padding-inline: 5px;
+                border-radius: 5px;
+                margin-right: 5px;
+            }
         }
     }
     &-menu{
@@ -45,12 +55,21 @@
         grid-column: 3;
         grid-row: 1;
 
+        justify-content: center;
+
+        & ul{
+            margin-bottom: 0px;
+            padding-left: 0px;
+        }
+
         & li{
             display: inline;
             list-style-type: none;
 
             font-size: 20px;
             background-color: black;
+
+            border-radius: 5px;
 
             & a{
                 text-decoration-line: none;

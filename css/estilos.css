@@ -25,28 +25,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
-  max-width: 1500px; }
+  max-width: 1500px;
+  height: 100%; }
   .encabezado-logo {
-    display: flex;
-    flex-direction: column;
-    font-size: xx-large;
-    padding-bottom: 20px; }
+    padding-bottom: 0px;
+    margin-bottom: 5px; }
     .encabezado-logo a {
       color: ghostwhite;
       width: max-content;
       border: black solid 1px;
       text-decoration-line: none;
-      text-align: center;
       background-color: #aa782e; }
-  .encabezado-menu li {
-    display: inline; }
-  .encabezado-menu a {
-    color: #FFD460;
-    text-decoration: none;
-    font-size: large;
-    padding-inline: 2px;
-    border-radius: 5px;
-    background-color: black; }
+  .encabezado-menu ul {
+    padding: 0px;
+    margin: 0px; }
+    .encabezado-menu ul li {
+      display: inline-flex; }
+      .encabezado-menu ul li a {
+        color: #FFD460;
+        text-decoration: none;
+        font-size: 20px;
+        padding-inline: 2px;
+        border-radius: 5px;
+        background-color: black; }
   .encabezado-menu a:hover {
     background-color: #efad67;
     color: black;
@@ -56,24 +57,24 @@ body {
   .encabezado {
     padding: 5px;
     width: 100%;
-    background-size: cover; }
+    height: 100%; }
     .encabezado-logo {
-      font-size: x-large;
-      justify-content: center;
-      align-items: center;
       font-size: 25px;
-      padding: 0px;
-      padding-bottom: 10px; }
-    .encabezado-menu li {
-      display: flex;
-      padding: 2px;
-      justify-content: center;
-      align-items: center; }
-    .encabezado-menu a {
       text-align: center;
-      width: 30%;
-      height: 100%;
-      background-color: #2e090a; } }
+      margin-bottom: 2px; }
+    .encabezado-menu {
+      padding: 0px; }
+      .encabezado-menu ul li {
+        display: flex;
+        padding: 2px;
+        justify-content: center;
+        align-items: center; }
+        .encabezado-menu ul li a {
+          text-align: center;
+          font-size: 18px;
+          width: 30%;
+          height: max-content;
+          background-color: #2e090a; } }
 
 /* INDEX FOOTER */
 .footer {
@@ -82,37 +83,48 @@ body {
   background-color: #F07B3F;
   height: 80px;
   padding: 20px;
-  align-items: center;
-  max-width: 1500px; }
+  max-width: 1500px;
+  align-items: center; }
   .footer-rrss {
     grid-column: 1;
-    grid-row: 1; }
+    grid-row: 1;
+    margin-bottom: 0px;
+    padding-left: 0px; }
     .footer-rrss li {
       display: inline; }
       .footer-rrss li a i {
         font-size: 30px;
         margin-inline: 5px;
-        color: darkblue; }
+        color: darkblue;
+        text-align: left; }
   .footer-icono {
     display: grid;
     grid-column: 2;
     grid-row: 1; }
-    .footer-icono i {
-      font-size: 30px;
-      color: white;
-      background-color: black;
-      padding-inline: 5px;
-      border-radius: 5px;
-      margin-right: 5px; }
+    .footer-icono h2 {
+      font-size: 25px;
+      margin-bottom: 0px; }
+      .footer-icono h2 a i {
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        padding-inline: 5px;
+        border-radius: 5px;
+        margin-right: 5px; }
   .footer-menu {
     display: grid;
     grid-column: 3;
-    grid-row: 1; }
+    grid-row: 1;
+    justify-content: center; }
+    .footer-menu ul {
+      margin-bottom: 0px;
+      padding-left: 0px; }
     .footer-menu li {
       display: inline;
       list-style-type: none;
       font-size: 20px;
-      background-color: black; }
+      background-color: black;
+      border-radius: 5px; }
       .footer-menu li a {
         text-decoration-line: none;
         color: white; }
@@ -172,11 +184,10 @@ body {
     font-weight: bold;
     padding-top: 25px;
     text-align: left;
-    list-style-type: none; }
+    list-style: none; }
 
 @media (max-width: 576px) {
   .contenido {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 5px;
     width: 100%;
@@ -206,87 +217,92 @@ body {
 .contacto {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   max-width: 1500px;
   padding: 20px;
   height: 548px;
   text-align: center;
-  align-items: center;
+  justify-content: center;
   align-content: center;
   background-image: linear-gradient(white, yellow); }
   .contacto div {
     display: grid;
     justify-items: center; }
     .contacto div h2 {
-      grid-column: 1;
       grid-row: 1;
       font-size: 40px;
-      text-align: center;
-      margin-top: 20px; }
-    .contacto div h3 {
-      font-size: 30px; }
-    .contacto div h4 {
+      text-align: center; }
+    .contacto div p {
       font-size: 20px;
-      margin-top: 20px; }
+      grid-row: 2; }
     .contacto div form {
       width: 500px;
       border: black solid 5px;
       border-radius: 20px;
-      padding: 5px; }
+      grid-row: 3;
+      padding: 5px;
+      margin: 50px; }
       .contacto div form label {
         display: inline-block;
         width: 150px;
-        font-size: 20px;
+        font-size: 18px;
         text-align: right; }
       .contacto div form select {
         display: inline-block;
-        width: 165px;
-        font-size: 20px;
+        width: 150px;
+        font-size: 18px;
         border: black solid 1px;
         margin-bottom: 3px; }
       .contacto div form input {
         display: inline-block;
-        width: 165px;
+        width: 150px;
         border: black solid 1px;
+        font-size: 18px; }
+      .contacto div form h3 {
         font-size: 20px;
-        margin-bottom: 3px; }
+        margin-bottom: 1px; }
       .contacto div form textarea {
-        border: black solid 1px; }
+        border: black solid 1px;
+        height: 100px;
+        resize: none; }
 
 @media (max-width: 576px) {
   .contacto {
+    grid-template-rows: repeat(1, 1fr);
     width: 100%;
-    height: 100%;
+    padding: 0px;
+    margin: 0px;
     padding: 5px; }
-    .contacto div {
-      width: 100%; }
-      .contacto div h2 {
-        margin-top: 0px;
-        font-size: 30px; }
-      .contacto div h3 {
+    .contacto div h2 {
+      margin-top: 0px;
+      font-size: 30px; }
+    .contacto div p {
+      font-size: 25px; }
+    .contacto div form {
+      width: 100%;
+      margin: 0px;
+      background-color: #d8af94; }
+      .contacto div form label {
+        display: inline-block;
+        width: 60px;
+        font-size: 15px;
+        font-weight: bold; }
+      .contacto div form select {
+        display: inline-block;
+        width: 130px;
+        font-size: 15px;
+        margin: 2px; }
+      .contacto div form input {
+        display: inline-block;
+        width: 130px;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 2px; }
+      .contacto div form h3 {
         margin-top: 10px;
-        margin-bottom: 1px;
-        font-size: 20px; }
-      .contacto div p {
-        font-size: 25px; }
-      .contacto div form {
-        width: 100%;
-        background-color: #d8af94; }
-        .contacto div form label {
-          display: inline-block;
-          width: 60px;
-          font-size: 15px;
-          font-weight: bold; }
-        .contacto div form select {
-          display: inline-block;
-          width: 130px;
-          font-size: 15px;
-          margin: 5px; }
-        .contacto div form input {
-          display: inline-block;
-          width: 130px;
-          font-size: 15px;
-          font-weight: bold;
-          margin: 5px; } }
+        margin-bottom: 0px;
+        font-size: 15px;
+        font-weight: bold; } }
 
 /* GALERIA */
 .galeria {
@@ -418,7 +434,7 @@ body {
   justify-items: center;
   text-align: center; }
   .torneos h2 {
-    font-size: xx-large;
+    font-size: 40px;
     grid-column: 1/3;
     grid-row: 1;
     text-align: center; }
@@ -452,14 +468,15 @@ body {
         border-radius: 10px;
         font-size: 25px;
         margin-inline: 40px;
-        margin-top: 50px; }
+        margin-top: 30px; }
   .torneos textarea {
     grid-column: 2;
     grid-row: 2;
     border: black solid 5px;
     width: 550px;
     height: 231px;
-    font-size: 20px; }
+    font-size: 20px;
+    resize: none; }
 
 @media (max-width: 576px) {
   .torneos {

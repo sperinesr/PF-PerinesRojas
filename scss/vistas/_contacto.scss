@@ -2,13 +2,15 @@
 .contacto{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
 
     max-width: $pantallaGrande;
     padding: $paddingGeneral;
     height: $alturaGeneral;
 
     text-align: center;
-    align-items: center;
+
+    justify-content: center;
     align-content: center;
 
     background-image: linear-gradient(white, yellow);
@@ -18,23 +20,17 @@
         justify-items: center;
 
         & h2{
-            grid-column: 1;
             grid-row: 1;
 
             font-size: 40px;
         
             text-align: center;
-        
-            margin-top: 20px;
         }
 
-        & h3{
-            font-size: 30px;
-        }
-
-        & h4{
+        & p{
             font-size: 20px;
-            margin-top: 20px;
+
+            grid-row: 2;
         }
 
         & form {
@@ -43,21 +39,24 @@
             border: black solid 5px;
             border-radius: 20px;
 
+            grid-row: 3;
+
             padding: 5px;
+            margin: 50px;
 
             & label{
                 display: inline-block;
                 width: 150px;
 
-                font-size: 20px;
+                font-size: 18px;
                 text-align: right;
             }
 
             & select{
                 display: inline-block;
-                width: 165px;
+                width: 150px;
             
-                font-size: 20px;
+                font-size: 18px;
 
                 border: black solid 1px;
 
@@ -65,17 +64,25 @@
             }
             & input{
                 display: inline-block;
-                width: 165px;
+                width: 150px;
 
                 border: black solid 1px;
             
-                font-size: 20px;
+                font-size: 18px;
+            }
 
-                margin-bottom: 3px;
+            & h3{
+                font-size: 20px;
+    
+                margin-bottom: 1px;
             }
 
             & textarea{
                 border: black solid 1px;
+
+                height: 100px;
+
+                resize: none;
             }
         }
     }
@@ -83,23 +90,20 @@
 
 @media (max-width: 576px){
 .contacto{
+    grid-template-rows: repeat(1,1fr);
+
     width: 100%;
-    height: 100%;
+
+    padding: 0px;
+    margin: 0px;
 
     padding: $paddingMobile;
 
     & div{
-        width: 100%;
 
         & h2{
             margin-top: 0px;
             font-size: $titulosMobile;
-        }
-
-        & h3{
-            margin-top: 10px;
-            margin-bottom: 1px;
-            font-size: 20px;
         }
 
         & p{
@@ -108,6 +112,8 @@
 
         & form{
             width: 100%;
+
+            margin: 0px;
 
             background-color:rgb(216, 175, 148);
 
@@ -125,7 +131,7 @@
             
                 font-size: 15px;
             
-                margin: 5px;
+                margin: 2px;
             }
 
             & input{
@@ -134,7 +140,15 @@
             
                 font-size: 15px;
                 font-weight: bold;
-                margin: 5px;
+                margin: 2px;
+            }
+
+            & h3{
+                margin-top: 10px;
+                margin-bottom: 0px;
+                
+                font-size: 15px;
+                font-weight: bold;
             }
         }
     }
