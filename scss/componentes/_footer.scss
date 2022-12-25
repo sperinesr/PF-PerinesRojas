@@ -19,10 +19,10 @@
         & li{
             display: inline;
 
-            & a img{
-                border: black solid 2px;
-                border-radius: 15px;
-                width: 30px;
+            & a i{
+                font-size: 30px;
+                margin-inline: 5px;
+                color: darkblue;
             }
         }
     }
@@ -31,8 +31,13 @@
         grid-column: 2;
         grid-row: 1;
 
-        & img{
-            width: 40px;
+        & i{
+            font-size: 30px;
+            color: white;
+            background-color: black;
+            padding-inline: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
         }
     }
     &-menu{
@@ -44,8 +49,12 @@
             display: inline;
             list-style-type: none;
 
+            font-size: 20px;
+            background-color: black;
+
             & a{
                 text-decoration-line: none;
+                color: white;
             }
         }
     }
@@ -55,19 +64,24 @@
 .footer{
     grid-template-columns: repeat(2,1fr);
 
-    &-rrss li a img{
-        scale: 70%;
+    &-rrss li a i{
+        font-size: 25px;
+        margin-inline: 5px;
     }
-
+    
     &-icono h2{
         font-size: 12px;
 
         vertical-align: middle;
 
-        & img{
+        & i{
             vertical-align: middle;
 
-            padding-right: 3px;
+            font-size: 25px;
+            color: white;
+            background-color: black;
+            padding-inline: 3px;
+            border-radius: 5px;
         }
     }
 

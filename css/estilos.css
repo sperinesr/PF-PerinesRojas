@@ -89,37 +89,50 @@ body {
     grid-row: 1; }
     .footer-rrss li {
       display: inline; }
-      .footer-rrss li a img {
-        border: black solid 2px;
-        border-radius: 15px;
-        width: 30px; }
+      .footer-rrss li a i {
+        font-size: 30px;
+        margin-inline: 5px;
+        color: darkblue; }
   .footer-icono {
     display: grid;
     grid-column: 2;
     grid-row: 1; }
-    .footer-icono img {
-      width: 40px; }
+    .footer-icono i {
+      font-size: 30px;
+      color: white;
+      background-color: black;
+      padding-inline: 5px;
+      border-radius: 5px;
+      margin-right: 5px; }
   .footer-menu {
     display: grid;
     grid-column: 3;
     grid-row: 1; }
     .footer-menu li {
       display: inline;
-      list-style-type: none; }
+      list-style-type: none;
+      font-size: 20px;
+      background-color: black; }
       .footer-menu li a {
-        text-decoration-line: none; }
+        text-decoration-line: none;
+        color: white; }
 
 @media (max-width: 576px) {
   .footer {
     grid-template-columns: repeat(2, 1fr); }
-    .footer-rrss li a img {
-      scale: 70%; }
+    .footer-rrss li a i {
+      font-size: 25px;
+      margin-inline: 5px; }
     .footer-icono h2 {
       font-size: 12px;
       vertical-align: middle; }
-      .footer-icono h2 img {
+      .footer-icono h2 i {
         vertical-align: middle;
-        padding-right: 3px; }
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        padding-inline: 3px;
+        border-radius: 5px; }
     .footer-menu li {
       display: none; } }
 
