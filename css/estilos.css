@@ -226,12 +226,13 @@ body {
       width: 500px;
       border: black solid 5px;
       border-radius: 20px;
+      background-color: #d8af94;
       grid-row: 3;
       padding: 5px;
-      margin: 50px; }
+      margin: 5px; }
       .contacto div form label {
         display: inline-block;
-        width: 170px;
+        width: 100px;
         font-size: 18px;
         text-align: right; }
       .contacto div form select {
@@ -272,7 +273,7 @@ body {
       background-color: #d8af94; }
       .contacto div form label {
         display: inline-block;
-        width: 150px;
+        width: 25%;
         font-size: 15px; }
       .contacto div form select {
         display: inline-block;
