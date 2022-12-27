@@ -34,6 +34,7 @@ body {
       color: ghostwhite;
       width: max-content;
       border: black solid 1px;
+      border-radius: 5px;
       text-decoration-line: none;
       background-color: #aa782e; }
   .encabezado-menu ul {
@@ -59,7 +60,7 @@ body {
     width: 100%;
     height: 100%; }
     .encabezado-logo {
-      font-size: 25px;
+      font-size: 30px;
       text-align: center;
       margin-bottom: 2px; }
     .encabezado-menu {
@@ -81,8 +82,11 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #F07B3F;
-  height: 80px;
-  padding: 20px;
+  height: 54px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   max-width: 1500px;
   align-items: center; }
   .footer-rrss {
@@ -111,23 +115,8 @@ body {
         padding-inline: 5px;
         border-radius: 5px;
         margin-right: 5px; }
-  .footer-menu {
-    display: grid;
-    grid-column: 3;
-    grid-row: 1;
-    justify-content: center; }
-    .footer-menu ul {
-      margin-bottom: 0px;
-      padding-left: 0px; }
-    .footer-menu li {
-      display: inline;
-      list-style-type: none;
-      font-size: 20px;
-      background-color: black;
-      border-radius: 5px; }
-      .footer-menu li a {
-        text-decoration-line: none;
-        color: white; }
+  .footer .navbar {
+    height: 0px; }
 
 @media (max-width: 576px) {
   .footer {
@@ -204,11 +193,8 @@ body {
         grid-row: 2;
         font-size: 25px; }
     .contenido img {
-      display: block;
       grid-column: 1;
-      grid-row: 3;
-      width: 90%;
-      margin-top: 20px; }
+      grid-row: 3; }
     .contenido-lista {
       text-align: center;
       font-size: 20px;
@@ -245,18 +231,18 @@ body {
       margin: 50px; }
       .contacto div form label {
         display: inline-block;
-        width: 150px;
+        width: 170px;
         font-size: 18px;
         text-align: right; }
       .contacto div form select {
         display: inline-block;
-        width: 150px;
+        width: 170px;
         font-size: 18px;
         border: black solid 1px;
         margin-bottom: 3px; }
       .contacto div form input {
         display: inline-block;
-        width: 150px;
+        width: 170px;
         border: black solid 1px;
         font-size: 18px; }
       .contacto div form h3 {
@@ -271,6 +257,7 @@ body {
   .contacto {
     grid-template-rows: repeat(1, 1fr);
     width: 100%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     padding: 5px; }
@@ -278,33 +265,25 @@ body {
       margin-top: 0px;
       font-size: 30px; }
     .contacto div p {
-      font-size: 25px;
-      margin-bottom: 0px; }
+      font-size: 25px; }
     .contacto div form {
       width: 100%;
       margin: 0px;
       background-color: #d8af94; }
       .contacto div form label {
         display: inline-block;
-        width: 60px;
-        font-size: 15px;
-        font-weight: bold; }
+        width: 150px;
+        font-size: 15px; }
       .contacto div form select {
         display: inline-block;
-        width: 130px;
+        width: 150px;
         font-size: 15px;
         margin: 2px; }
       .contacto div form input {
         display: inline-block;
-        width: 130px;
+        width: 150px;
         font-size: 15px;
-        font-weight: bold;
-        margin: 2px; }
-      .contacto div form h3 {
-        margin-top: 10px;
-        margin-bottom: 0px;
-        font-size: 15px;
-        font-weight: bold; } }
+        margin: 2px; } }
 
 /* GALERIA */
 .galeria {
@@ -397,7 +376,7 @@ body {
     margin: 0px;
     grid-column: 2;
     grid-row: 1/3;
-    height: 450px;
+    max-height: 450px;
     border: black solid 5px;
     border-radius: 20px; }
 
@@ -418,7 +397,7 @@ body {
       margin: 0px;
       grid-column: 1;
       grid-row: 3;
-      height: 100%;
+      max-height: 100%;
       border: black solid 5px;
       border-radius: 20px; } }
 
@@ -456,20 +435,17 @@ body {
         display: inline-block;
         text-align: right;
         width: 250px;
-        font-size: 25px; }
+        font-size: 20px; }
       .torneos-form form select {
+        display: inline;
         width: 250px;
-        font-size: 25px;
         border: black solid 1px;
+        font-size: 20px;
         margin-bottom: 5px; }
       .torneos-form form input {
-        width: 100px;
-        height: 40px;
         border: black solid 1px;
-        border-radius: 10px;
-        font-size: 25px;
-        margin-inline: 40px;
-        margin-top: 30px; }
+        margin-top: 20px;
+        margin-inline: 30px; }
   .torneos textarea {
     grid-column: 2;
     grid-row: 2;
@@ -498,21 +474,11 @@ body {
         height: max-content;
         width: 100%; }
         .torneos-form form label {
-          width: 150px;
-          margin-top: 2px;
-          margin-left: 0px;
+          width: 160px;
           font-size: 15px; }
         .torneos-form form select {
-          width: 150px;
-          margin-top: 2px;
-          margin-right: 5px;
+          width: 160px;
           font-size: 15px; }
-        .torneos-form form input {
-          width: 80px;
-          height: 30px;
-          font-size: 15px;
-          margin: 5px;
-          margin-top: 10px; }
     .torneos textarea {
       grid-column: 1;
       grid-row: 3;

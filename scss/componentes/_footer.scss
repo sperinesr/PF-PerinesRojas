@@ -5,9 +5,12 @@
 
     background-color: #F07B3F;
 
-    height: 80px;
+    height: 54px;
 
-    padding: $paddingGeneral;
+    padding-left: $paddingGeneral;
+    padding-right: $paddingGeneral;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     max-width: $pantallaGrande;
 
@@ -50,32 +53,8 @@
             }
         }
     }
-    &-menu{
-        display: grid;
-        grid-column: 3;
-        grid-row: 1;
-
-        justify-content: center;
-
-        & ul{
-            margin-bottom: 0px;
-            padding-left: 0px;
-        }
-
-        & li{
-            display: inline;
-            list-style-type: none;
-
-            font-size: 20px;
-            background-color: black;
-
-            border-radius: 5px;
-
-            & a{
-                text-decoration-line: none;
-                color: white;
-            }
-        }
+    & .navbar{
+        height: 0px;
     }
 }
 

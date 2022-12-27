@@ -18,16 +18,33 @@
             <h1 class="encabezado-logo">
                 <a href="../index.html">Busca Torneos TCG</a>
             </h1>
-            <nav class="encabezado-menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../paginas/torneos.html">Torneos</a></li>
-                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="../paginas/contacto.html">Contacto</a></li>
-                    <li><a href="../paginas/galeria.html">Galeria</a></li>
-                </ul> 
-            </nav>
         </div>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto m b-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../paginas/torneos.html">Torneos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../paginas/galeria.html">Galeria</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
     </header>
 
     <main>
@@ -37,27 +54,27 @@
                 <p>Si tienes quejas, sugerencia o quieres agregar un torneo al sistema envianos el siguiente
                     formulario:</p>
                 <form action="contacto.html" method="get">
-                    <label>Motivo: </label>
-                    <select name="motivo_opt" id="motivo">
+                    <label class="col-sm-2 col-form-label">Motivo: </label>
+                    <select class="form-select form-select-sm" name="motivo_opt" id="motivo">
                         <option value="ingresar_torneo">Ingresar Torneo</option>
                         <option value="quejas">Quejas</option>
                         <option value="sugerencia">Sugerencia</option>
                     </select>
-                    <br />
-                    <label>Nombre: </label>
+                    <br/>
+                    <label class="col-sm-2 col-form-label">Nombre: </label>
                     <input type="text" name="nombre_opt" id="nombre">
-                    <br />
-                    <label>Correo: </label>
+                    <br/>
+                    <label class="col-sm-2 col-form-label">Correo: </label>
                     <input type="email" name="correo_opt" id="correo">
-                    <br />
-                    <label>Asunto: </label>
+                    <br/>
+                    <label class="col-sm-2 col-form-label">Asunto: </label>
                     <input type="text" name="asunto_opt" id="asunto">
-                    <br />
+                    <br/>
                     <h3>Mensaje</h3>
                     <textarea name="mensaje_opt" id="mensaje" cols="30" rows="10"></textarea>
-                    <br />
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
+                    <br/>
+                    <input class="btn btn-light" type="submit" value="Enviar">
+                    <input class="btn btn-light" type="reset" value="Limpiar">
                 </form>
             </div>
         </section>
@@ -74,14 +91,28 @@
                 <div class="footer-icono">
                     <h2><a href="./index.html"><i class="bi bi-square"></i></a>Buscar Torneo TCG</h2>
                 </div>
-                <nav class="footer-menu">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../paginas/torneos.html">Torneos</a></li>
-                        <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                        <li><a href="../paginas/contacto.html">Contacto</a></li>
-                        <li><a href="../paginas/galeria.html">Galeria</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto m b-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/torneos.html">Torneos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/galeria.html">Galeria</a>
+                                </li>
+                            </ul>
+                      </div>
+                    </div>
                 </nav>
             </nav>
         </div>
