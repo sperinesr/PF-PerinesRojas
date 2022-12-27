@@ -112,19 +112,24 @@
         padding-bottom: $paddingBottomM;
 
         & form{
-            height: max-content;
+            height: 100%;
             width: 100%;
 
             & label{
-            width: 160px;
+            width: 150px;
                 
-            font-size: 15px;
+            font-size: 14px;
             }
 
             & select{
-                width: 160px;
+                width: 150px;
             
-            font-size: 15px;
+            font-size: 13px;
+            }
+
+            & input{
+                font-size: 14px;
+                margin-inline: 10px;
             }
         }
     }
@@ -139,7 +144,7 @@
         height: 230px;
         width: 100%;
 
-        font-size: 17px;
+        font-size: 14px;
     }
 }
 }
