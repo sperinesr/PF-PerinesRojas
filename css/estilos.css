@@ -49,10 +49,6 @@ body {
         padding-inline: 2px;
         border-radius: 5px;
         background-color: black; }
-  .encabezado-menu a:hover {
-    background-color: #efad67;
-    color: black;
-    transition: all 0.2s ease; }
 
 @media (max-width: 576px) {
   .encabezado {
@@ -60,22 +56,11 @@ body {
     width: 100%;
     height: 100%; }
     .encabezado-logo {
-      font-size: 30px;
+      font-size: 40px;
       text-align: center;
       margin-bottom: 2px; }
-    .encabezado-menu {
-      padding: 0px; }
-      .encabezado-menu ul li {
-        display: flex;
-        padding: 2px;
-        justify-content: center;
-        align-items: center; }
-        .encabezado-menu ul li a {
-          text-align: center;
-          font-size: 18px;
-          width: 30%;
-          height: max-content;
-          background-color: #2e090a; } }
+  .navbar {
+    text-align: center; } }
 
 /* INDEX FOOTER */
 .footer {
@@ -120,7 +105,10 @@ body {
 
 @media (max-width: 576px) {
   .footer {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    height: 100%; }
     .footer-rrss li a i {
       font-size: 25px;
       margin-inline: 5px; }
@@ -134,7 +122,7 @@ body {
         background-color: black;
         padding-inline: 3px;
         border-radius: 5px; }
-    .footer-menu li {
+    .footer .navbar {
       display: none; } }
 
 /* INDEX CONTENIDO */
