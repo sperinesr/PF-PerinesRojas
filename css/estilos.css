@@ -118,7 +118,7 @@ body {
 @media (max-width: 576px) {
   .footer-rrss li a i {
     font-size: 25px;
-    margin-inline: 5px; }
+    margin-inline: 4px; }
   .footer-icono h2 {
     font-size: 15px; }
   .footer .navbar {
