@@ -89,42 +89,86 @@
     }
 }
 
+@media (max-width: 758px){
+    .torneos{
+        grid-template-columns: repeat(2,1fr);
+        
+        width: 100%;
+        height: 548px;
+    
+        padding: $paddingTablet;
+    
+        & h2{
+            font-size: $titulosTablet;
+
+            padding-bottom: $paddingBottomT;
+        }
+    
+        &-form{
+            width: max-content;
+            height: max-content;
+
+            grid-column: 1/3;
+            
+            padding-bottom: $paddingBottomT;
+    
+            & form{
+                width: max-content;
+                height: max-content;
+
+                & label{
+                    width: 150px;   
+                    font-size: 14px;
+                }
+    
+                & select{
+                    width: 150px;
+                    font-size: 14px;
+                }
+    
+                & input{
+                    font-size: 15px;
+                    margin-inline: 15px;
+                }
+            }
+        }
+    
+        & textarea{
+            grid-column: 1/3;
+            grid-row: 3;
+    
+            height: 100%;
+            width: 100%;
+    
+            font-size: 14px;
+        }
+    }
+}
+
 @media (max-width: 576px){
 .torneos{
     grid-template-columns: repeat(1,1fr);
-    width: 100%;
-    height: 100%;
+    height: max-content;
 
     padding: $paddingMobile;
 
     & h2{
         font-size: $titulosMobile;
-        width: 100%;
         padding-bottom: $paddingBottomM;
     }
 
     &-form{
-        margin: 0%;
-
         width: 100%;
-        height: 100%;
         
         padding-bottom: $paddingBottomM;
 
         & form{
-            height: 100%;
             width: 100%;
-
-            & label{
-            width: 150px;
-                
-            font-size: 14px;
-            }
 
             & select{
                 width: 150px;
-            
-            font-size: 13px;
+                
+                font-size: 13px;
             }
 
             & input{
@@ -132,19 +176,6 @@
                 margin-inline: 10px;
             }
         }
-    }
-
-    & textarea{
-        grid-column: 1;
-        grid-row: 3;
-
-        width: 100%;
-        height: 100%;
-
-        height: 230px;
-        width: 100%;
-
-        font-size: 14px;
     }
 }
 }

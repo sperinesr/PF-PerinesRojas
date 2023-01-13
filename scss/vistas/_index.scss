@@ -57,6 +57,34 @@
     }
 }
 
+@media (max-width: 758px){
+    .contenido{ 
+        padding: $paddingTablet;
+    
+        width: 100%;
+        height: 548px;
+    
+        &-obj{
+    
+             & h2{
+                 font-size: $titulosTablet;
+                 padding-bottom: $paddingBottomT;
+             }
+    
+             & p{
+                 font-size: $parrafosTablet;
+             }
+        }
+    
+         & img{
+             scale: 90%;
+         }
+    
+         &-lista{
+             padding-bottom: $paddingBottomT;
+         }
+    }
+}
 
 @media (max-width: 576px){
 .contenido{
