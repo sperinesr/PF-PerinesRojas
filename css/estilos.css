@@ -116,13 +116,16 @@ body {
       display: none; } }
 
 @media (max-width: 576px) {
-  .footer-rrss li a i {
-    font-size: 25px;
-    margin-inline: 4px; }
-  .footer-icono h2 {
-    font-size: 15px; }
-  .footer .navbar {
-    display: none; } }
+  .footer {
+    margin: 0px;
+    padding: 0px; }
+    .footer-rrss li a i {
+      font-size: 25px;
+      margin-inline: 4px; }
+    .footer-icono h2 {
+      font-size: 15px; }
+    .footer .navbar {
+      display: none; } }
 
 /* INDEX CONTENIDO */
 .contenido {
