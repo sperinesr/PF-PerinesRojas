@@ -1,8 +1,8 @@
-#Proyecto CoderHouse
+# Proyecto CoderHouse
 
-##3ra entrega
-<<<<<<< HEAD
-=======
+## Entrega final
 
->>>>>>> 365729ccbb5b1857131d42207e4a63f91f073b99
-###SASS BOOTSTRAP CEO HOSTING
+### HTML, CSS, FLEXBOX, GRID
+### GIT, GITHUB
+### BOOTSTRAP
+### SASS, SEO, HOSTING
